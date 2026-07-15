@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sweet modern photo album made with love.">
+  <title>For My Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="heart-layer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="For My Love home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Love Album</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#album">Photos</a>
+        <a href="#note">Letter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Our little gallery</p>
+        <h1 id="hero-title">Ten photos, a thousand tiny memories.</h1>
+        <p class="hero-text">
+          Album made for the girl who makes every ordinary day feel soft, bright, and worth remembering.
+        </p>
+        <a class="primary-link" href="#album">Open the album</a>
+      </div>
+
+      <div class="hero-album reveal" aria-label="Featured photo stack">
+        <figure class="polaroid polaroid-back">
+          <img src="photos/photo2.jpg" alt="A favorite memory together" width="420" height="560">
+        </figure>
+        <figure class="polaroid polaroid-main">
+          <img src="photos/photo1.jpg" alt="My girlfriend smiling in a favorite photo" width="520" height="680">
+          <figcaption>My favorite person</figcaption>
+        </figure>
+        <figure class="polaroid polaroid-front">
+          <img src="photos/photo3.jpg" alt="A sweet moment from our album" width="360" height="480">
+        </figure>
+      </div>
+    </section>
+
+    <section class="album-section" id="album" aria-labelledby="album-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Photo story</p>
+        <h2 id="album-title">A trending album wall, just for her.</h2>
+      </div>
+
+      <div class="album-grid">
+        <button class="memory-card reveal" type="button" data-full="photos/photo1.jpg" data-title="Her Smile" data-caption="The kind of smile that makes everything feel lighter.">
+          <img src="photos/photo1.jpg" alt="Photo 1 from our love album" width="720" height="900">
+          <div class="memory-meta">
+            <span>01</span>
+            <h3>Her Smile</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo2.jpg" data-title="Soft Moment" data-caption="A quiet little memory I want to keep forever.">
+          <img src="photos/photo2.jpg" alt="Photo 2 from our love album" width="720" height="1080">
+          <div class="memory-meta">
+            <span>02</span>
+            <h3>Soft Moment</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo3.jpg" data-title="My Favorite" data-caption="One of those photos I can look at again and again.">
+          <img src="photos/photo3.jpg" alt="Photo 3 from our love album" width="720" height="900">
+          <div class="memory-meta">
+            <span>03</span>
+            <h3>My Favorite</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo4.jpg" data-title="Little Magic" data-caption="A tiny piece of happiness saved in one frame.">
+          <img src="photos/photo4.jpg" alt="Photo 4 from our love album" width="720" height="900" loading="lazy">
+          <div class="memory-meta">
+            <span>04</span>
+            <h3>Little Magic</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo5.jpg" data-title="Always Us" data-caption="My favorite story is still the one with you in it.">
+          <img src="photos/photo5.jpg" alt="Photo 5 from our love album" width="1080" height="720" loading="lazy">
+          <div class="memory-meta">
+            <span>05</span>
+            <h3>Always Us</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo6.jpg" data-title="Sweet Day" data-caption="A day that still feels warm when I remember it.">
+          <img src="photos/photo6.jpg" alt="Photo 6 from our love album" width="720" height="900" loading="lazy">
+          <div class="memory-meta">
+            <span>06</span>
+            <h3>Sweet Day</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo7.jpg" data-title="Pretty Light" data-caption="Everything looks better when you are in the frame.">
+          <img src="photos/photo7.jpg" alt="Photo 7 from our love album" width="720" height="900" loading="lazy">
+          <div class="memory-meta">
+            <span>07</span>
+            <h3>Pretty Light</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo8.jpg" data-title="Tiny Forever" data-caption="A small memory, but one I never want to lose.">
+          <img src="photos/photo8.jpg" alt="Photo 8 from our love album" width="720" height="900" loading="lazy">
+          <div class="memory-meta">
+            <span>08</span>
+            <h3>Tiny Forever</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo9.jpg" data-title="Our Glow" data-caption="The soft kind of happiness that belongs only to us.">
+          <img src="photos/photo9.jpg" alt="Photo 9 from our love album" width="720" height="900" loading="lazy">
+          <div class="memory-meta">
+            <span>09</span>
+            <h3>Our Glow</h3>
+          </div>
+        </button>
+        <button class="memory-card reveal" type="button" data-full="photos/photo10.jpg" data-title="My Heart" data-caption="Ten photos, but still not enough to show how much you mean to me.">
+          <img src="photos/photo10.jpg" alt="Photo 10 from our love album" width="720" height="900" loading="lazy">
+          <div class="memory-meta">
+            <span>10</span>
+            <h3>My Heart</h3>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="bouquet-section" aria-labelledby="bouquet-title">
+      <div class="bouquet-copy reveal">
+        <p class="eyebrow">A little gift</p>
+        <h2 id="bouquet-title">Touch the bouquet.</h2>
+        <p class="hero-text">A tiny flower surprise made for her. Tap it and watch the bloom open.</p>
+      </div>
+
+      <button class="bouquet-stage reveal" type="button" aria-label="Touch bouquet to make flowers bloom">
+        <span class="boom-layer" aria-hidden="true"></span>
+        <span class="bouquet" aria-hidden="true">
+          <span class="stem stem-one"></span>
+          <span class="stem stem-two"></span>
+          <span class="stem stem-three"></span>
+          <span class="flower flower-one">
+            <span></span><span></span><span></span><span></span><span></span>
+          </span>
+          <span class="flower flower-two">
+            <span></span><span></span><span></span><span></span><span></span>
+          </span>
+          <span class="flower flower-three">
+            <span></span><span></span><span></span><span></span><span></span>
+          </span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+          <span class="wrap"></span>
+        </span>
+      </button>
+    </section>
+
+    <section class="note-section" id="note" aria-labelledby="note-title">
+      <div class="note-panel reveal">
+        <div class="note-copy">
+          <p class="eyebrow">A small note</p>
+          <h2 id="note-title">You are my calm place and my happiest surprise.</h2>
+          <p>
+            I made this little corner of the internet for you, so our memories can live somewhere beautiful.
+            Every photo here is a reminder that loving you is my favorite part of the day.
+          </p>
+        </div>
+        <figure class="note-gif">
+          <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Mmd5OWFlZWxlNG5jeDIxOXlsN3NyNnBjaGVlNnptbHZ2bDRuZTRxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EbEphCw4wMYGBAYYO8/giphy.gif" alt="Cute romantic animation" width="420" height="420" loading="lazy">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with love, today and always.</p>
+  </footer>
+
+  <div class="lightbox" id="photo-lightbox" aria-hidden="true" inert role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+    <button class="lightbox-backdrop" type="button" aria-label="Close photo preview"></button>
+    <div class="lightbox-panel" role="document">
+      <button class="lightbox-close" type="button" aria-label="Close photo preview">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="lightbox-photo-wrap">
+        <img class="lightbox-photo" src="" alt="">
+      </div>
+      <div class="lightbox-content">
+        <p class="eyebrow">Memory preview</p>
+        <h2 id="lightbox-title">Photo title</h2>
+        <p id="lightbox-caption">Photo caption</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
